@@ -1,0 +1,42 @@
+{
+  "name": "portfolio-v9",
+  "version": "1.0.0",
+  "description": "Portfolio Version 9",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typefasterjoel/portfolio-v9.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^1.0.4",
+    "jshint": "^2.10.2"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1",
+    "node-sass": "^4.12.0"
+  },
+  "author": "Joel Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/typefasterjoel/portfolio-v9/issues"
+  },
+  "homepage": "https://github.com/typefasterjoel/portfolio-v9#readme"
+}

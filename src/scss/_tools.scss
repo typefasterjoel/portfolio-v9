@@ -1,0 +1,49 @@
+
+/**
+ * Mixins to use
+ */
+
+
+// Get Color
+// This will return a color designated by the name given inside of _vars.scss
+@function c($color) {
+    @return map-get($colors, $color);
+}
+
+// Media Query
+// This will return the media query necessary to use for a particular device.
+// To see all breakpoints, check _vars.scss
+@function mq($width) {
+    @return map-get($mq, $width);
+}
+
+
+// Get Spacing
+// This calls any spacing measurement to be used on margins and paddings.
+// See available spacing measures in _vars.scss
+@function s($measure) {
+    @return map-get($spacing, $measure);
+}
+@function ns($measure) {
+    @return map-get($negativeSpacing, $measure);
+}
+
+// Get Font Size
+// Returns the different font sizes set for various type of typography.
+@function f($fontSize) {
+    @return map-get($headings, $fontSize);
+}
+
+// Get Radious
+@function r($radius) {
+    @return map-get($radiuses, $radius);
+}
+
+@function shadow($name) {
+    @return map-get($shadows, $name);
+}
+
+//Get Weight
+@function w($weight) {
+    @return map-get($weights, $weight);
+}

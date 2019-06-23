@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: $sans;
+    font-size: 16px;
+    background: c(thirdtiary);
+    color: c(secondary);
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $slab;
+}
+
+a {
+    color: c(secondary);
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+    &:hover {
+        color: c(cta);
+    }
+}
+
+p {
+    line-height: 1.5;
+    padding: s(sm) 0;
+}
+
+section {
+    padding: s(xxl) 0;
+    position: relative;
+
+    h2 { 
+        font-size: f(f2); 
+        margin: 0 0 s(sm);
+    }
+
+    h3 {
+        font-size: f(f3);
+        margin: 0 0 s(m);
+    }
+}
+
+
+.container {
+    max-width: $container;
+    margin: 0 auto;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 11px s(sm);
+    border-radius: r(r1);
+
+
+    &.raised {
+        box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+        font-family: $slab;
+
+        &.primary {
+            background-color: c(cta); 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: w(bold);
+            color: c(thirdtiary);
+
+            &:hover {
+                background: c(secondary);
+                color: c(thirdtiary);
+            }
+        }
+    }
+
+    &.blank,
+    &.secondary,
+    &.thirdtiary {
+
+        &:hover {
+            background: rgba(0,0,0,0.05);
+            color: inherit;
+        }
+    }
+
+    &.w-icon {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &.thirdtiary {
+        color: c(cta);
+
+
+    }
+}
+
+.section-actions {
+    position: absolute;
+    bottom: s(xxl);
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,63 @@
+/**
+ * Portfolio Variables
+ *
+ */
+
+// Fonts
+$slab: 'Zilla Slab', serif;
+$sans: 'Lato', sans-serif;
+
+
+// Colors
+$colors: (
+    main: #4EB7F0,
+    secondary: #2D5A79,
+    cta: #FF7B54,
+    thirdtiary: #F7F4ED
+);
+
+$spacing: (
+    xs: 4px,
+    s: 8px,
+    sm: 12px,
+    m: 16px,
+    l: 24px,
+    xl: 48px,
+    xxl: 96px,
+);
+
+//Typography
+$headings: (
+    f1: 48px,
+    f2: 32px,
+    f3: 24px,
+    f4: 18px
+);
+
+$bodySize: 16px;
+
+$weights: (
+    thin: 300,
+    regular: 400,
+    bold: 700
+);
+
+
+//Media queries
+$mq: (
+	s: 'screen and (min-width: 26em)',
+	m: 'screen and (min-width: 42em)',
+	l: 'screen and (min-width: 60em)',
+	ll: 'screen and (min-width: 64em)',
+	xl: 'screen and (min-width: 80em)',
+	xxl: 'screen and (min-width: 110em)'
+);
+
+// Misc
+$container: 1200px;
+
+$radiuses: (
+    r0: 0px,
+    r1: 3px,
+    r2: 5px
+);

@@ -1,0 +1,25 @@
+/**
+ * Thanks for visiting the code of my portfolio. Enjoy it.
+ */
+
+// Misc
+@import 'vars';
+@import 'tools';
+@import 'normalize';
+
+// Global
+@import 'global';
+
+
+// Home
+@import 'components/topPanel';
+
+// About
+@import 'components/aboutPanel';
+
+// Work
+@import 'components/workPanel';
+
+//Contact
+@import 'components/contactPanel';
+

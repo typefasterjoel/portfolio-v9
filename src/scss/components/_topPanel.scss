@@ -1,0 +1,70 @@
+#TopPanel {
+    background: c(main);
+    color: c(thirdtiary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .split-panel {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: f(f1);
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-weight: w(thin);
+        }
+    }
+
+    h2 {
+        font-family: $sans;
+        font-weight: w(regular);
+        font-size: f(f4);
+        margin: s(m) 0;
+    }
+
+    .devices {
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+        }
+
+        .mobile {
+            img { margin-right: 40px; }
+        }
+
+        .bigger {
+            img {
+                margin-top: s(l);
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .actions {
+
+        .btn {
+            margin-right: s(sm);
+        }
+
+    }
+
+    .btn {
+
+        &.w-icon {
+            color: c(thirdtiary);
+        }
+    }
+}

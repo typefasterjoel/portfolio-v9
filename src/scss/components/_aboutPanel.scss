@@ -1,0 +1,45 @@
+#AboutPanel {
+    background: url(../img/about-bg.png) 115% 50% no-repeat;
+
+    .work-logos {
+        margin-bottom: s(xxl);
+
+        ul {
+            list-style: none;
+            margin: s(l) 0 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            li {
+                text-align: center;
+                img { display: inline-block; }
+            }
+        }
+    }
+
+    .skills-container {
+        max-width: 70%;
+        margin-bottom: s(xxl);
+
+        .skills {
+            display: flex;
+            
+            .skill-set {
+                margin-right: s(xl);
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    
+                    li {
+                        margin-top: s(xs);
+                    }
+                }
+            }
+        }
+    }
+}
