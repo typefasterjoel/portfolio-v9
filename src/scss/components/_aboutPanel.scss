@@ -1,5 +1,25 @@
 #AboutPanel {
-    background: url(../img/about-bg.png) 115% 50% no-repeat;
+    padding: s(l);
+    background: url(../img/about-bg.png) 50% 50% no-repeat cover;
+
+    @media #{mq(m)} {
+        padding: inherit;
+        background: url(../img/about-bg.png) 115% 50% no-repeat;
+
+    }
+
+    .section-actions {
+        position: static;
+        margin-top: s(l);
+        text-align: center;
+
+        @media #{mq(m)} {
+            position: absolute;
+            margin-top: 0;
+            text-align: left;
+        }
+    }
+
 
     .work-logos {
         margin-bottom: s(xxl);
@@ -10,19 +30,36 @@
             padding: 0;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            @media #{mq(m)} {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                flex-direction: row;
+            }
 
             li {
                 text-align: center;
+                margin: s(m) 0;
+
+                @media #{mq(m)} {
+                    margin: 0;
+                }
+                
                 img { display: inline-block; }
             }
         }
     }
 
     .skills-container {
-        max-width: 70%;
-        margin-bottom: s(xxl);
+
+        @media #{mq(m)} {
+            max-width: 70%;
+            margin-bottom: s(xxl);
+        }
 
         .skills {
             display: flex;

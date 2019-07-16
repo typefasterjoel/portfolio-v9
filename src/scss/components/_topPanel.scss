@@ -2,8 +2,18 @@
     background: c(main);
     color: c(thirdtiary);
     min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
+    padding: s(l);
+
+    @media #{mq(m)} {
+        padding: 0;
+        height: auto;
+    }
+
+    
 
     .split-panel {
         height: 100%;
@@ -11,12 +21,24 @@
         align-items: center;
         width: 100%;
         justify-content: center;
+        flex-direction: column;
+
+        margin-top: 80%;
+
+        @media #{mq(m)} {
+            margin-top: 0;
+            flex-direction: row;
+        }
     }
 
     h1 {
-        font-size: f(f1);
-        margin: 0;
+        font-size: f(f2);
+        margin: s(s) 0 0;
         padding: 0;
+
+        @media #{mq(m)} {
+            font-size: f(f1);
+        }
 
         span {
             font-weight: w(thin);
@@ -27,22 +49,42 @@
         font-family: $sans;
         font-weight: w(regular);
         font-size: f(f4);
+        line-height: 1.5;
         margin: s(m) 0;
     }
 
     .devices {
         display: flex;
         align-items: center;
+        justify-content: center;
+        position: relative;
+
+        @media #{mq(m)} {
+            justify-content: flex-start;
+        }
 
         img {
             display: block;
         }
 
         .mobile {
-            img { margin-right: 40px; }
+
+            img {
+
+                margin-top: s(xl);
+
+                @media #{mq(m)} {
+                    margin-right: 40px; 
+                }
+            }
         }
 
         .bigger {
+            display: none;
+
+            @media #{mq(l)} {
+                display: block;
+            }
             img {
                 margin-top: s(l);
 
@@ -54,9 +96,32 @@
     }
 
     .actions {
+        text-align: center;
+
+        @media #{mq(m)} {
+            display: block;
+            text-align: left;
+        }
 
         .btn {
-            margin-right: s(sm);
+            margin-top: s(sm);
+
+            @media #{mq(m)} {
+                margin-top: 0;
+                margin-right: s(sm);
+            }
+
+            &.primary {
+                display: block;
+                width: 100%;
+                text-align: center;
+
+                @media #{mq(m)} {
+                    display: inline-block;
+                    width: auto;
+                    text-align: inherit;
+                }
+            }
         }
 
     }
@@ -65,6 +130,14 @@
 
         &.w-icon {
             color: c(thirdtiary);
+        }
+    }
+
+    .section-actions {
+        display: none;
+
+        @media #{mq(m)} {
+            display: block;
         }
     }
 }

@@ -21,9 +21,9 @@
 
                     <div class="actions">
                         <a href="#" class="btn primary raised">Resume</a>
-                        <a href="#" class="btn blank secondary">About</a>
-                        <a href="#" class="btn blank secondary">Work</a>
-                        <a href="#" class="btn blank secondary">Contact</a>
+                        <a href="#AboutPanel" class="btn blank secondary scroll-btn">About</a>
+                        <a href="#WorkPanel" class="btn blank secondary scroll-btn">Work</a>
+                        <a href="#ContactPanel" class="btn blank secondary scroll-btn">Contact</a>
                     </div>
                 </div>
                 <!-- .context-->
@@ -43,7 +43,7 @@
         <!-- .split-panel -->
         <div class="full section-actions">
             <div class="container">
-                <a href="#" class="btn secondary contrast w-icon">Start <i class="far fa-angle-down"></i></a>
+                <a href="#AboutPanel" class="btn secondary contrast w-icon scroll-btn">Start <i class="far fa-angle-down"></i></a>
             </div>
             <!-- .container -->
         </div>
@@ -98,7 +98,7 @@
       <!-- .container -->
       <div class="section-actions">
         <div class="container">
-            <a href="#" class="btn thirdtiary w-icon">Work <i class="far fa-angle-down"></i></a>
+            <a href="#WorkPanel" class="btn thirdtiary w-icon scroll-btn">Work <i class="far fa-angle-down"></i></a>
         </div>
         <!-- .container --> 
       </div>
@@ -114,20 +114,26 @@
                 <li>
                     <div class="case-study gh">
                         <div class="case-study-logo"><img src="img/case-study/gh-logo.svg" alt="Gamer's Hive" /></div>
+                        <div class="case-study-desc">
+                            <p>Gamer's Hive is a networking platform for gamers who are looking to find others at their same skill level to play together or build a gaming team.</p>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="case-study mg">
-                        <div class="case-study-logo"><img src="img/case-study/mg-logo.svg" alt="Gamer's Hive" /></div>
+                        <div class="case-study-logo"><img src="img/case-study/mg-logo.svg" alt="Mesothelioma Guide" /></div>
+                        <div class="case-study-desc">
+                            <p>Mesothelioma Guide is a one stop shop for patients and family membeers to get information about the disease, as well as medical and financial help.</p>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="case-study ac">
-                        <div class="case-study-logo"><img src="img/case-study/ac-logo.svg" alt="Gamer's Hive" /></div>
+                        <div class="case-study-logo"><img src="img/case-study/ac-logo.svg" alt="Addiction Center" /></div>
+                        <div class="case-study-desc">
+                            <p>AddictionCenter helps family members and patients sufferring from addiction find a place to get treated and get back on-track with their lives.</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="case-study cc"></div>
                 </li>
             </ul>
         </div>
@@ -136,7 +142,7 @@
         <div class="container">
             <footer>
                 <h2>Let's Grab Some Coffee</h2>
-                <p>Seriously, I love coffee. If you would like to discuss your next project, need consultancy, or someone to speak at your next event feel free to connect with me via email or in any social media.</p>
+                <p>Seriously, I love coffee. If you would like to discuss your next project, need consultancy, or someone to speak at your next event feel free to connect with me via <a href="mailto:joel@typefasterjoel.com" target="_blank">email</a> or in any social media.</p>
             </footer>
             <aside class="social">
                 <ul>
@@ -153,5 +159,7 @@
     </section>
 </main>
     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>
