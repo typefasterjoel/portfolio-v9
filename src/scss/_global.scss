@@ -9,7 +9,7 @@ html {
 html, body {
     font-family: $sans;
     font-size: 16px;
-    background: c(thirdtiary);
+    background: c(tertiary);
     color: c(secondary);
 }
 
@@ -70,18 +70,18 @@ section {
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: w(bold);
-            color: c(thirdtiary);
+            color: c(tertiary);
 
             &:hover {
                 background: c(secondary);
-                color: c(thirdtiary);
+                color: c(tertiary);
             }
         }
     }
 
     &.blank,
     &.secondary,
-    &.thirdtiary {
+    &.tertiary {
 
         &:hover {
             background: rgba(0,0,0,0.05);
@@ -94,7 +94,7 @@ section {
         letter-spacing: 2px;
     }
 
-    &.thirdtiary {
+    &.tertiary {
         color: c(cta);
 
 

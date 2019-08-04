@@ -2,8 +2,8 @@
     padding: s(l);
     background: c(main);
 
-    @media #{media(m)} {
-        padding: inherit;
+    @media #{mq(m)} {
+        padding: s(l);
     }
 
     .container {
@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         flex-direction: column;
 
-        @media #{media(m)} {
+        @media #{mq(m)} {
             flex-direction: row;
         }
     }
@@ -20,7 +20,11 @@
         flex: 1 1 60%; 
 
         p {
-            @media #{media(m)} {
+            @media #{mq(m)} {
+                max-width: 90%;
+            }
+
+            @media #{mq(l)} {
                 max-width: 60%;
             }
         }
@@ -34,7 +38,7 @@
             padding: 0;
             text-align: center;
 
-            @media #{media(l)} {
+            @media #{mq(m)} {
                 text-align: right;
             }
 
@@ -52,7 +56,7 @@
         text-align: center;
         margin-top: s(l);
 
-        @media #{media(m)} {
+        @media #{mq(m)} {
             text-align: left;
             margin-top: 0;
         }

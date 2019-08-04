@@ -1,6 +1,6 @@
 #TopPanel {
     background: c(main);
-    color: c(thirdtiary);
+    color: c(tertiary);
     min-height: 100vh;
     height: 100vh;
     overflow: hidden;
@@ -9,8 +9,12 @@
     padding: s(l);
 
     @media #{mq(m)} {
-        padding: 0;
+        padding: s(l);
         height: auto;
+    }
+
+    @media #{mq(l)} {
+        padding: 0;
     }
 
     
@@ -129,7 +133,7 @@
     .btn {
 
         &.w-icon {
-            color: c(thirdtiary);
+            color: c(tertiary);
         }
     }
 
@@ -138,6 +142,11 @@
 
         @media #{mq(m)} {
             display: block;
+            padding: 0 s(l);
+        }
+
+        @media #{mq(l)} {
+            padding: 0;
         }
     }
 }

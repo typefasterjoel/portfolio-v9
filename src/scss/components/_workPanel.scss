@@ -2,7 +2,7 @@
     padding: s(l);
 
     @media #{mq(m)} {
-        padding: inherit;
+        padding: s(xxl) s(l);
     }
 
     p {
@@ -22,16 +22,26 @@
             flex-direction: column;
             padding: 0 0 s(l) 0;
 
+            @media #{mq(m)} {
+                flex-direction: row;
+                padding: 0 s(m);
+            }
 
             @media #{mq(l)} { 
-                flex-direction: row;
                 padding: 0;
+            }
+
+            li {
+                @media #{mq(m)} {
+                    flex: 0 0 33%;
+                    margin: 0 s(s);
+                }
             }
 
             li:nth-child(even) {
                 .case-study {
 
-                    @media #{mq(m)} {
+                    @media #{mq(l)} {
                         margin-top: s(xl);
                     }
                 }
@@ -50,8 +60,13 @@
                 margin: s(l) auto;
 
                 @media #{mq(m)} {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                @media #{mq(l)} {
                     margin-top: 0;
-                    height: 500%;
+                    height: 500px;
                     margin-left: s(m);
                     margin-right: s(m);
                 }
@@ -83,7 +98,7 @@
                     padding: s(l);
                     left: 0;
                     right: 0;
-                    color: c(thirdtiary);
+                    color: c(tertiary);
                     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
                     transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
