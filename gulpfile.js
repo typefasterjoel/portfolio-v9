@@ -21,7 +21,7 @@ function onError(err) {
 
 function BrowserSync() {
     var files = [
-        'site/*.html',
+        'site/**/*.html',
         'src/js/**/*.js'
     ];
 

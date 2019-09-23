@@ -8,7 +8,13 @@
     }
 
     @media #{mq(l)} {
+        padding: s(xl);
+        background: url('../img/about-bg.png') 245% 50% no-repeat;
+    }
+
+    @media #{mq(xl)} {
         padding: s(xxl) 0;
+        background: url('../img/about-bg.png') 80% 50% no-repeat;
     }
 
     .section-actions {
@@ -24,6 +30,10 @@
         }
 
         @media #{mq(l)} {
+            padding: 0 s(xl);
+        }
+
+        @media #{mq(xl)} {
             padding: 0;
         }
     }
@@ -60,8 +70,8 @@
                     margin: s(l);
                 }
 
-                @media #{mq(l)} {
-                    margin: 0;
+                @media #{mq(xl)} {
+                    margin: s(l) s(xl);
                 }
                 
                 img { display: inline-block; }

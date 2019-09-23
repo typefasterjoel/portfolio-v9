@@ -1,0 +1,33 @@
+#navigation {
+    padding: s(l);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: c(white);
+    @include elevation(2);
+
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 s(xl);
+            font-size: f(f3);
+            vertical-align: middle;
+
+            a { vertical-align: middle; }
+        }
+
+        .logo {
+            width: 72px;
+            svg {
+                fill: c(cta);
+            }
+        }
+    }
+}

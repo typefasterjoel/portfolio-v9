@@ -7,7 +7,25 @@
     <script src="https://kit.fontawesome.com/1b646cc2ae.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Zilla+Slab:400,700&display=swap" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
-    <title>Joel Lopez | Product Designer | Gamer | All of the above...</title>
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <title>Joel Lopez | Director | Web Product Designer | UI/UX Designer | UI Engineer</title>
+    <meta property="og:title" content="Joel Lopez | Director | Web Product Designer | UI/UX Designer | UI Engineer" />
+	<meta property="og:site_name" content="Joel Lopez | Director | Web Product Designer | UI/UX Designer | UI Engineer" />
+	<meta property="og:description" content="Hola! I'm a Director/Web Product Designer with over 10 years of experience making products for a wide variety of audiences. Thank You for checking out my portfolio. If you have questions, please feel free to contact me.">
+	<meta property="og:image" content="https://www.typefasterjoel.com/img/social.png" />
+	<meta property="og:url" content="https://www.typefasterjoel.com/" />
+	<meta property="og:type" content="website" />
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-4397071-14', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 <main id="SiteApplication">
@@ -17,10 +35,10 @@
                 <div class="context">
                     <img src="img/logo.svg" alt="Logo for Typefasterjoel | AKA Joel Lopez">
                     <h1><span>Hola! I'm</span> Joel Lopez</h1>    
-                    <h2>Web Product Designer &middot; UI/UX Designer / Engineer</h2>
+                    <h2>Director &middot; Web Product Designer &middot; UI/UX Designer / Engineer</h2>
 
                     <div class="actions">
-                        <a href="#" class="btn primary raised">Resume</a>
+                        <a href="/files/resume.pdf" target="_blank" class="btn primary raised">Resume</a>
                         <a href="#AboutPanel" class="btn blank secondary scroll-btn">About</a>
                         <a href="#WorkPanel" class="btn blank secondary scroll-btn">Work</a>
                         <a href="#ContactPanel" class="btn blank secondary scroll-btn">Contact</a>
@@ -47,7 +65,7 @@
             </div>
             <!-- .container -->
         </div>
-        <!-- .sectoin-actions -->
+        <!-- .section-actions -->
     </section>
     <section id="AboutPanel">
       <div class="container">
@@ -107,12 +125,13 @@
     <section id="WorkPanel">
         <div class="container">
             <h2>Getting Inspired by the Problem</h2>
-            <p>The beauty of the web is that it continiously evolves every day. That's why I get inspired by problems and the people that face them. It gives me the motivation to create solutions and continue working to enhance and give the users an unforgettable experience. Here are some of the case studies from work that I've done.</p>
+            <p>The beauty of the web is that it continuously evolves every day. That's why I get inspired by problems and the people that face them. It gives me the motivation to create solutions and continue working to enhance and give the users an unforgettable experience. Here are some of the case studies from work that I've done.</p>
         </div>
         <div class="work-container">
             <ul>
                 <li>
                     <div class="case-study gh">
+                        <a href="https://medium.com/@typefasterjoel/gamers-hive-a-unique-story-about-gamers-6fb33d5e46f6" target="_blank" class="cover"></a>
                         <div class="case-study-logo"><img src="img/case-study/gh-logo.svg" alt="Gamer's Hive" /></div>
                         <div class="case-study-desc">
                             <p>Gamer's Hive is a networking platform for gamers who are looking to find others at their same skill level to play together or build a gaming team.</p>
@@ -121,17 +140,19 @@
                 </li>
                 <li>
                     <div class="case-study mg">
+                        <a href="https://medium.com/@typefasterjoel/helping-patients-with-information-18f77e48d5c2" target="_blank" class="cover"></a>
                         <div class="case-study-logo"><img src="img/case-study/mg-logo.svg" alt="Mesothelioma Guide" /></div>
                         <div class="case-study-desc">
-                            <p>Mesothelioma Guide is a one stop shop for patients and family membeers to get information about the disease, as well as medical and financial help.</p>
+                            <p>MesotheliomaGuide is an informative site that helps connect patients with the help they need to fight this disease.</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="case-study ac">
+                        <a href="#" class="cover open-modal" data-modal="#AddictionCenterModal"></a>
                         <div class="case-study-logo"><img src="img/case-study/ac-logo.svg" alt="Addiction Center" /></div>
                         <div class="case-study-desc">
-                            <p>AddictionCenter helps family members and patients sufferring from addiction find a place to get treated and get back on-track with their lives.</p>
+                            <p>AddictionCenter helps family members and patients suffering from addiction find a place to get treated and get back on-track with their lives.</p>
                         </div>
                     </div>
                 </li>
@@ -150,6 +171,7 @@
                     <li><a href="https://twitter.com/typefasterjoel" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://linkedin.com/in/joellopez" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="https://dribbble.com/typefasterjoel" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a href=""><i class="fab fa-medium"></i></a></li>
                 </ul>
             </aside>
             <div class="pride-proud">
@@ -158,6 +180,41 @@
         </div>
     </section>
 </main>
+
+<div id="overlay"></div>
+<div class="popup" id="AddictionCenterModal">
+    <div class="popup-header">
+        <h2>AddictionCenter.com</h2>
+        <button class="btn icon tertiary close-modal"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="popup-content">
+        <div class="project-roles">
+            <h3>Roles</h3>
+            <p>For this project I was Production Director managing a designer and an illustrator to create the graphics, layouts, and user experience for this site.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>User-Testing</li>
+                <li>UI Design</li>
+                <li>User Interviews</li>
+                <li>UX Design</li>
+                <li>HTML/CSS/JS</li>
+                <li>WordPress</li>
+                <li>PHP</li>
+            </ul>
+            <h3>Case Study Coming Soon</h3>
+        </div>
+        <div class="project-screenshots">
+            <ul>
+                <li><img src="/img/popup/ac/1.png"></li>
+                <li><img src="/img/popup/ac/2.png"></li>
+                <li><img src="/img/popup/ac/3.png"></li>
+                <li><img src="/img/popup/ac/4.png"></li>
+                <li><img src="/img/popup/ac/5.png"></li>
+                <li><img src="/img/popup/ac/6.png"></li>
+            </ul>
+        </div>
+    </div>
+</div>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/scripts.min.js"></script>

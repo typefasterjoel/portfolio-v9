@@ -17,8 +17,6 @@
         padding: 0;
     }
 
-    
-
     .split-panel {
         height: 100%;
         display: flex;
@@ -72,6 +70,14 @@
         }
 
         .mobile {
+
+            @media #{mq(l)} {
+                display: none;
+            }
+
+            @media #{mq(xl)} {
+                display: block;
+            }
 
             img {
 
@@ -146,6 +152,10 @@
         }
 
         @media #{mq(l)} {
+            padding: 0 s(xl);
+        }
+
+        @media #{mq(xl)} {
             padding: 0;
         }
     }
