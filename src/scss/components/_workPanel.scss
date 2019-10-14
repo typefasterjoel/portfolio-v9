@@ -1,3 +1,76 @@
+#ProcessStyle {
+    padding: s(l);
+    background: c(main);
+
+    @media #{mq(m)} {
+        padding: s(xxl) s(l);
+    }
+
+    & > .container {
+        padding-bottom: 96px;
+    }
+
+    .stepper {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        li {
+            display: flex;
+            flex: 0 0 100%;
+            padding: s(l) 0;
+
+            @media #{mq(m)} {
+                flex: 0 1 50%;
+            }
+
+
+            .step-icon {
+                flex: 0 0 56px;
+                display: block;
+                width: 56px;
+                height: 56px;
+                border-radius: 100%;
+                background: c(white);
+                line-height: 58px;
+                text-align: center;
+                margin-right: s(m);
+                margin-top: s(s);
+                color: c(cta);
+                @include elevation(2);
+
+                i {
+                    font-size: f(f3);
+                    --fa-primary-color: #4EB7F0;
+                    --fa-secondary-color: #FF7B54;
+                    --fa-secondary-opacity: 1;
+                }
+            }
+
+            .step-details {
+                padding: 0;
+                
+                @media #{mq(m)} {
+                    padding: 0 s(xl) 0 0;
+                }
+
+                h4 { 
+                    margin: 0; 
+                    font-size: f(f4);
+                }
+                p { margin: 0 }
+            }
+        }
+    }
+
+    .section-actions {
+        
+    }
+}
+
 #WorkPanel {
     padding: s(l);
 
